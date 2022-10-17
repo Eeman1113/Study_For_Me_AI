@@ -2,9 +2,12 @@ import streamlit as st
 import os 
 
 
-st.title('Ask Me Anything 📚')
+# st.title('Ask Me Anything 📚')
+st.markdown("<h1 style='text-align: center; color: white;'>Ask Me Anything 🎓</h1>", unsafe_allow_html=True)
+st.markdown('')
+st.markdown('')
 
-# st.session_state['new']=True
+st.session_state['new']=True
 # if st.session_state.new==True:
 #     os.system('!pip install torch==1.10.2+cu113 torchvision==0.11.3+cu113 torchaudio===0.10.2+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html')
 #     os.system('!pip install transformers')
