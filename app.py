@@ -22,7 +22,7 @@ nlp = pipeline('question-answering', model='deepset/roberta-base-squad2', tokeni
 
 text = form.text_area('Gimme Stuff To Study 📚')
 
-submit_button = form.form_submit_button(label='Submit')
+submit_button = form.form_submit_button(label='Study This')
 
 st.markdown('---')
 ques=st.text_input('Ask Me Anything From The Information You Have Given')
