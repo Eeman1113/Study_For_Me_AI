@@ -15,11 +15,14 @@ st.session_state['new']=True
 
 from transformers import AutoModelForQuestionAnswering, AutoTokenizer, pipeline
 
+form = st.form(key='my_form')
 
 # creating the q/a pipeline
 nlp = pipeline('question-answering', model='deepset/roberta-base-squad2', tokenizer='deepset/roberta-base-squad2')
 
-text = st.text_area('Gimme Stuff To Study 📚')
+text = form.text_area('Gimme Stuff To Study 📚')
+
+submit_button = form.form_submit_button(label='Submit')
 
 st.markdown('---')
 ques=st.text_input('Ask Me Anything From The Information You Have Given')
